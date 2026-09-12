@@ -1,0 +1,41 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "레드포지",
+      "hasCanvas": false,
+      "bodyTextLen": 122,
+      "bodyTextHash": "1edf6f4dfeb516911f125bb1f513fe6858cd91be600bab2dd64f6cf62a773619",
+      "bodyTextPrefix": "레드포지 PBS 없이 Data 파일을 고칩니다 종족 기술 야생 디버그 파일 불러오는 중 어나더레드 데이터를 열고 있",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "레드포지",
+      "hasCanvas": false,
+      "bodyTextLen": 115,
+      "bodyTextHash": "23854969b8977cd225119e839f2a68aa60963d2f51ee30e97cfffae1f4f0b26a",
+      "bodyTextPrefix": "레드포지 PBS 없이 Data 파일을 고칩니다 종족 기술 야생 디버그 파일 어나더레드 데이터를 열고 있습니다 PBS",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: body text collapsed (23794 -> 122 chars)",
+    "mobile: body text collapsed (19005 -> 115 chars)"
+  ]
+}

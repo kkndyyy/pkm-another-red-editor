@@ -1,0 +1,130 @@
+[
+  {
+    "name": "001_Debugging",
+    "path": "Data/Scripts/001_Technical/001_Debugging",
+    "sha": "f934abbacd09afa460bf00e3e7b00ddf4473b5cb",
+    "size": 0,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/001_Debugging?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/001_Technical/001_Debugging",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/f934abbacd09afa460bf00e3e7b00ddf4473b5cb",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/001_Debugging?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/f934abbacd09afa460bf00e3e7b00ddf4473b5cb",
+      "html": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/001_Technical/001_Debugging"
+    }
+  },
+  {
+    "name": "001_MKXP_Compatibility.rb",
+    "path": "Data/Scripts/001_Technical/001_MKXP_Compatibility.rb",
+    "sha": "8c67836ac5f2cb4c7b5cd1a9ebec48a2454a5978",
+    "size": 1557,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/001_MKXP_Compatibility.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/001_MKXP_Compatibility.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/8c67836ac5f2cb4c7b5cd1a9ebec48a2454a5978",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/001_Technical/001_MKXP_Compatibility.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/001_MKXP_Compatibility.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/8c67836ac5f2cb4c7b5cd1a9ebec48a2454a5978",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/001_MKXP_Compatibility.rb"
+    }
+  },
+  {
+    "name": "002_Files",
+    "path": "Data/Scripts/001_Technical/002_Files",
+    "sha": "98173443d8447f4db382c2986575f2c4b99cd680",
+    "size": 0,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/002_Files?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/001_Technical/002_Files",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/98173443d8447f4db382c2986575f2c4b99cd680",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/002_Files?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/98173443d8447f4db382c2986575f2c4b99cd680",
+      "html": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/001_Technical/002_Files"
+    }
+  },
+  {
+    "name": "002_RubyUtilities.rb",
+    "path": "Data/Scripts/001_Technical/002_RubyUtilities.rb",
+    "sha": "0ec29d5537121a1f879c4bf26dbeaa0b32e12471",
+    "size": 12186,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/002_RubyUtilities.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/002_RubyUtilities.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/0ec29d5537121a1f879c4bf26dbeaa0b32e12471",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/001_Technical/002_RubyUtilities.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/002_RubyUtilities.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/0ec29d5537121a1f879c4bf26dbeaa0b32e12471",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/002_RubyUtilities.rb"
+    }
+  },
+  {
+    "name": "003_Intl_Messages.rb",
+    "path": "Data/Scripts/001_Technical/003_Intl_Messages.rb",
+    "sha": "85b5b062cf4776d03aaa83f6a51a944e6b9db904",
+    "size": 29513,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/003_Intl_Messages.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/003_Intl_Messages.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/85b5b062cf4776d03aaa83f6a51a944e6b9db904",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/001_Technical/003_Intl_Messages.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/003_Intl_Messages.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/85b5b062cf4776d03aaa83f6a51a944e6b9db904",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/003_Intl_Messages.rb"
+    }
+  },
+  {
+    "name": "004_Input.rb",
+    "path": "Data/Scripts/001_Technical/004_Input.rb",
+    "sha": "747ebf0aa846e997d3431bac9b4ab3df855eeafe",
+    "size": 610,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/004_Input.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/004_Input.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/747ebf0aa846e997d3431bac9b4ab3df855eeafe",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/001_Technical/004_Input.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/004_Input.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/747ebf0aa846e997d3431bac9b4ab3df855eeafe",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/004_Input.rb"
+    }
+  },
+  {
+    "name": "005_PluginManager.rb",
+    "path": "Data/Scripts/001_Technical/005_PluginManager.rb",
+    "sha": "b84f390ab6b3bd8d82b848b3d246fd507b486800",
+    "size": 29850,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/005_PluginManager.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/005_PluginManager.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/b84f390ab6b3bd8d82b848b3d246fd507b486800",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/001_Technical/005_PluginManager.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/005_PluginManager.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/b84f390ab6b3bd8d82b848b3d246fd507b486800",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/005_PluginManager.rb"
+    }
+  },
+  {
+    "name": "006_RPG_Sprite.rb",
+    "path": "Data/Scripts/001_Technical/006_RPG_Sprite.rb",
+    "sha": "047b9345310fad9561e61e3e80a75c407d8f4612",
+    "size": 10438,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/006_RPG_Sprite.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/006_RPG_Sprite.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/047b9345310fad9561e61e3e80a75c407d8f4612",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/001_Technical/006_RPG_Sprite.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/001_Technical/006_RPG_Sprite.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/047b9345310fad9561e61e3e80a75c407d8f4612",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/001_Technical/006_RPG_Sprite.rb"
+    }
+  }
+]

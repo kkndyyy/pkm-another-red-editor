@@ -1,0 +1,130 @@
+[
+  {
+    "name": "001_Debug_Menus.rb",
+    "path": "Data/Scripts/020_Debug/003_Debug menus/001_Debug_Menus.rb",
+    "sha": "2f6b3f522e0931fb428e8c3f154258ce2bfbb4bd",
+    "size": 13002,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/001_Debug_Menus.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/001_Debug_Menus.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/2f6b3f522e0931fb428e8c3f154258ce2bfbb4bd",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/001_Debug_Menus.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/001_Debug_Menus.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/2f6b3f522e0931fb428e8c3f154258ce2bfbb4bd",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/001_Debug_Menus.rb"
+    }
+  },
+  {
+    "name": "002_Debug_MenuCommands.rb",
+    "path": "Data/Scripts/020_Debug/003_Debug menus/002_Debug_MenuCommands.rb",
+    "sha": "99c8755073cfd08c54f9e9e387c9e46d484558b5",
+    "size": 57606,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/002_Debug_MenuCommands.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/002_Debug_MenuCommands.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/99c8755073cfd08c54f9e9e387c9e46d484558b5",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/002_Debug_MenuCommands.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/002_Debug_MenuCommands.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/99c8755073cfd08c54f9e9e387c9e46d484558b5",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/002_Debug_MenuCommands.rb"
+    }
+  },
+  {
+    "name": "003_Debug_MenuExtraCode.rb",
+    "path": "Data/Scripts/020_Debug/003_Debug menus/003_Debug_MenuExtraCode.rb",
+    "sha": "12d2feb2c61a3636687e7df699bcc97b76d4b4bf",
+    "size": 29578,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/003_Debug_MenuExtraCode.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/003_Debug_MenuExtraCode.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/12d2feb2c61a3636687e7df699bcc97b76d4b4bf",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/003_Debug_MenuExtraCode.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/003_Debug_MenuExtraCode.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/12d2feb2c61a3636687e7df699bcc97b76d4b4bf",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/003_Debug_MenuExtraCode.rb"
+    }
+  },
+  {
+    "name": "004_Debug_BattleCommands.rb",
+    "path": "Data/Scripts/020_Debug/003_Debug menus/004_Debug_BattleCommands.rb",
+    "sha": "4b8920dcf3f10273c46f778f7bfa0c570a9f1009",
+    "size": 18321,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/004_Debug_BattleCommands.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/004_Debug_BattleCommands.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/4b8920dcf3f10273c46f778f7bfa0c570a9f1009",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/004_Debug_BattleCommands.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/004_Debug_BattleCommands.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/4b8920dcf3f10273c46f778f7bfa0c570a9f1009",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/004_Debug_BattleCommands.rb"
+    }
+  },
+  {
+    "name": "005_Debug_BattlePkmnCommands.rb",
+    "path": "Data/Scripts/020_Debug/003_Debug menus/005_Debug_BattlePkmnCommands.rb",
+    "sha": "def2d76fab68e5666c6d8d5f26bf150ccc92eaa0",
+    "size": 30904,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/005_Debug_BattlePkmnCommands.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/005_Debug_BattlePkmnCommands.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/def2d76fab68e5666c6d8d5f26bf150ccc92eaa0",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/005_Debug_BattlePkmnCommands.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/005_Debug_BattlePkmnCommands.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/def2d76fab68e5666c6d8d5f26bf150ccc92eaa0",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/005_Debug_BattlePkmnCommands.rb"
+    }
+  },
+  {
+    "name": "006_Debug_BattleExtraCode.rb",
+    "path": "Data/Scripts/020_Debug/003_Debug menus/006_Debug_BattleExtraCode.rb",
+    "sha": "7b9b62ada917507f0d644c9ed144c017341331f9",
+    "size": 25472,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/006_Debug_BattleExtraCode.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/006_Debug_BattleExtraCode.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/7b9b62ada917507f0d644c9ed144c017341331f9",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/006_Debug_BattleExtraCode.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/006_Debug_BattleExtraCode.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/7b9b62ada917507f0d644c9ed144c017341331f9",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/006_Debug_BattleExtraCode.rb"
+    }
+  },
+  {
+    "name": "007_Debug_PokemonCommands.rb",
+    "path": "Data/Scripts/020_Debug/003_Debug menus/007_Debug_PokemonCommands.rb",
+    "sha": "946ca260faca8a01faeced60c9d48bc2b479fc16",
+    "size": 39859,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/007_Debug_PokemonCommands.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/007_Debug_PokemonCommands.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/946ca260faca8a01faeced60c9d48bc2b479fc16",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/007_Debug_PokemonCommands.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/007_Debug_PokemonCommands.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/946ca260faca8a01faeced60c9d48bc2b479fc16",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/007_Debug_PokemonCommands.rb"
+    }
+  },
+  {
+    "name": "008_Debug_FilenameUpdater.rb",
+    "path": "Data/Scripts/020_Debug/003_Debug menus/008_Debug_FilenameUpdater.rb",
+    "sha": "a15153303b4d8062510a4d579e6b260d6563be66",
+    "size": 3100,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/008_Debug_FilenameUpdater.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/008_Debug_FilenameUpdater.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/a15153303b4d8062510a4d579e6b260d6563be66",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/008_Debug_FilenameUpdater.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus/008_Debug_FilenameUpdater.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/a15153303b4d8062510a4d579e6b260d6563be66",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Debug%20menus/008_Debug_FilenameUpdater.rb"
+    }
+  }
+]

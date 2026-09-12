@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "레드포지",
+      "hasCanvas": false,
+      "bodyTextLen": 23794,
+      "bodyTextHash": "0cbadfa9c0f0344da3e24b444f2f1ca01aef0110436effabd2b849eaf1f1f7d7",
+      "bodyTextPrefix": "레드포지 PBS 없이 Data 파일을 고칩니다 종족 기술 야생 디버그 파일 어나더레드 Data 1025 / 1518",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "레드포지",
+      "hasCanvas": false,
+      "bodyTextLen": 19005,
+      "bodyTextHash": "d772bc8109d87154dfbae89eb2ee799a3b4bf4d8c05ccaf5930c434ee7de2e6e",
+      "bodyTextPrefix": "레드포지 PBS 없이 Data 파일을 고칩니다 종족 기술 야생 디버그 파일 1025 / 1518 폼 포함 노말 불꽃",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

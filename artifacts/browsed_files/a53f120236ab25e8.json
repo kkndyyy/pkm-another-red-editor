@@ -1,0 +1,98 @@
+[
+  {
+    "name": "001_Editor screens",
+    "path": "Data/Scripts/020_Debug/001_Editor screens",
+    "sha": "f4b69638c5573708dae0c146786748c4bd8da78b",
+    "size": 0,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/001_Editor%20screens?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/020_Debug/001_Editor%20screens",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/f4b69638c5573708dae0c146786748c4bd8da78b",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/001_Editor%20screens?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/f4b69638c5573708dae0c146786748c4bd8da78b",
+      "html": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/020_Debug/001_Editor%20screens"
+    }
+  },
+  {
+    "name": "001_Editor_Utilities.rb",
+    "path": "Data/Scripts/020_Debug/001_Editor_Utilities.rb",
+    "sha": "3c1d94899443121d3c5a00bbb0cbd501efb84598",
+    "size": 12353,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/001_Editor_Utilities.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/001_Editor_Utilities.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/3c1d94899443121d3c5a00bbb0cbd501efb84598",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/001_Editor_Utilities.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/001_Editor_Utilities.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/3c1d94899443121d3c5a00bbb0cbd501efb84598",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/001_Editor_Utilities.rb"
+    }
+  },
+  {
+    "name": "002_Animation editor",
+    "path": "Data/Scripts/020_Debug/002_Animation editor",
+    "sha": "818325c77f7d7f815f49ae1ff03ce34adb62ea99",
+    "size": 0,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/002_Animation%20editor?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/020_Debug/002_Animation%20editor",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/818325c77f7d7f815f49ae1ff03ce34adb62ea99",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/002_Animation%20editor?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/818325c77f7d7f815f49ae1ff03ce34adb62ea99",
+      "html": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/020_Debug/002_Animation%20editor"
+    }
+  },
+  {
+    "name": "002_Editor_DataTypes.rb",
+    "path": "Data/Scripts/020_Debug/002_Editor_DataTypes.rb",
+    "sha": "ee08fe75502b1fdb88ef948017452e9fdf7e65c8",
+    "size": 53816,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/002_Editor_DataTypes.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/002_Editor_DataTypes.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/ee08fe75502b1fdb88ef948017452e9fdf7e65c8",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/002_Editor_DataTypes.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/002_Editor_DataTypes.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/ee08fe75502b1fdb88ef948017452e9fdf7e65c8",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/002_Editor_DataTypes.rb"
+    }
+  },
+  {
+    "name": "003_Debug menus",
+    "path": "Data/Scripts/020_Debug/003_Debug menus",
+    "sha": "e0fe240270ffd8100e1635393c21150245505eb9",
+    "size": 0,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/020_Debug/003_Debug%20menus",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/e0fe240270ffd8100e1635393c21150245505eb9",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Debug%20menus?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/trees/e0fe240270ffd8100e1635393c21150245505eb9",
+      "html": "https://github.com/Maruno17/pokemon-essentials/tree/v21.1/Data/Scripts/020_Debug/003_Debug%20menus"
+    }
+  },
+  {
+    "name": "003_Editor_Listers.rb",
+    "path": "Data/Scripts/020_Debug/003_Editor_Listers.rb",
+    "sha": "802d0c6207bdb2bffb4775c9544af097098bbdfc",
+    "size": 16412,
+    "url": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Editor_Listers.rb?ref=v21.1",
+    "html_url": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Editor_Listers.rb",
+    "git_url": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/802d0c6207bdb2bffb4775c9544af097098bbdfc",
+    "download_url": "https://raw.githubusercontent.com/Maruno17/pokemon-essentials/v21.1/Data/Scripts/020_Debug/003_Editor_Listers.rb",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Maruno17/pokemon-essentials/contents/Data/Scripts/020_Debug/003_Editor_Listers.rb?ref=v21.1",
+      "git": "https://api.github.com/repos/Maruno17/pokemon-essentials/git/blobs/802d0c6207bdb2bffb4775c9544af097098bbdfc",
+      "html": "https://github.com/Maruno17/pokemon-essentials/blob/v21.1/Data/Scripts/020_Debug/003_Editor_Listers.rb"
+    }
+  }
+]

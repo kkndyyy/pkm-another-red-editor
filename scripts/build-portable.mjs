@@ -1,4 +1,5 @@
 import { build } from "vite";
+import { execSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync, existsSync, copyFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -195,6 +196,12 @@ start-server.bat 을 실행하세요. 검은 창을 닫지 마세요.
 - 작업 내용은 이 PC의 브라우저에 남습니다.
 - 다른 PC로 옮길 때는 「파일」탭의 작업 JSON 백업을 함께 가져가세요.
 - 플러그인 zip 도 오프라인에서 그대로 저장할 수 있습니다.
+
+업데이트 (인터넷 필요)
+--------------------
+update.bat 을 더블클릭하면 GitHub 저장소
+kkndyyy/pkm-another-red-editor 의 최신 에디터로 덮어씁니다.
+에디터 창을 닫은 뒤에 실행하세요. JSON 백업 파일은 지우지 않습니다.
 `;
 
 await build({ configFile: resolve(root, "vite.portable.config.ts") });
@@ -211,6 +218,21 @@ writeFileSync(resolve(outDir, "start-server.ps1"), SERVER_PS1);
 writeFileSync(resolve(outDir, "README.txt"), README);
 copyFileSync(resolve(root, "public/favicon.svg"), resolve(outDir, "favicon.svg"));
 
+const updateBat = readFileSync(resolve(root, "scripts/portable-update.bat"));
+const updatePs1Raw = readFileSync(resolve(root, "scripts/portable-update.ps1"));
+const bom = Buffer.from([0xef, 0xbb, 0xbf]);
+const updatePs1 = updatePs1Raw[0] === 0xef ? updatePs1Raw : Buffer.concat([bom, updatePs1Raw]);
+writeFileSync(resolve(outDir, "update.bat"), updateBat);
+writeFileSync(resolve(outDir, "update.ps1"), updatePs1);
+
+let sha = "unknown";
+try {
+  sha = execSync("git rev-parse --short HEAD", { cwd: root, encoding: "utf8" }).trim();
+} catch {
+  /* git 없음 */
+}
+writeFileSync(resolve(outDir, "version.txt"), `${sha}\n`);
+
 const cssPath = resolve(outDir, "redforge.css");
 const files = [
   { name: "index.html", data: INDEX_HTML },
@@ -218,6 +240,9 @@ const files = [
   { name: "start.bat", data: START_BAT },
   { name: "start-server.bat", data: SERVER_BAT },
   { name: "start-server.ps1", data: SERVER_PS1 },
+  { name: "update.bat", data: new Uint8Array(updateBat) },
+  { name: "update.ps1", data: new Uint8Array(updatePs1) },
+  { name: "version.txt", data: `${sha}\n` },
   { name: "README.txt", data: README },
   { name: "favicon.svg", data: new Uint8Array(readFileSync(resolve(root, "public/favicon.svg"))) },
 ];

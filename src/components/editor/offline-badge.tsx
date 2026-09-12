@@ -149,7 +149,9 @@ export function OfflineSetupCard() {
         <p className="mt-1 font-display text-xl font-semibold">이 폴더만 있으면 됩니다</p>
         <p className="mt-2 text-sm text-[var(--color-muted)]">
           어나더레드 데이터가 이 파일 안에 들어 있습니다. 인터넷에 연결하지 않아도 종족·기술·야생을 고치고 .dat와
-          플러그인을 저장할 수 있습니다.
+          플러그인을 저장할 수 있습니다. 최신 에디터가 필요하면 이 폴더의{" "}
+          <span className="font-mono text-[var(--color-fg)]">update.bat</span>을 더블클릭하세요. GitHub 최신본으로
+          덮어씁니다.
         </p>
       </section>
     );
@@ -198,6 +200,7 @@ export function OfflineSetupCard() {
         <li>1. 「오프라인 에디터 받기」로 zip을 받아 USB나 폴더에 둡니다.</li>
         <li>2. 인터넷이 없는 PC에서 압축을 풀고 start.bat을 더블클릭합니다. Chrome 또는 Edge가 열립니다.</li>
         <li>3. 빈 화면이면 start-server.bat을 실행하고, 검은 창은 닫지 마세요.</li>
+        <li>4. 나중에 최신 에디터로 바꾸려면 압축을 푼 폴더에서 update.bat을 더블클릭하세요. GitHub 최신본을 받습니다.</li>
         <li>
           {online
             ? "같은 브라우저에서만 쓰려면 「이 브라우저에 저장」을 한 번 누르면 됩니다."

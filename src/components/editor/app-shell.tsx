@@ -54,9 +54,9 @@ export function AppShell() {
           : "도로 · 맵 · 포켓몬";
 
   return (
-    <div className="flex min-h-dvh flex-col bg-[var(--color-bg)] text-[var(--color-fg)]">
+    <div className="flex h-dvh flex-col overflow-hidden bg-[var(--color-bg)] text-[var(--color-fg)]">
       <Toaster theme="dark" position="bottom-center" toastOptions={{ className: "redforge-toast" }} />
-      <header className="sticky top-0 z-20 border-b border-[var(--color-border)] bg-[var(--color-bg)]/92 backdrop-blur-md">
+      <header className="z-20 shrink-0 border-b border-[var(--color-border)] bg-[var(--color-bg)]/92 backdrop-blur-md">
         <div className="flex flex-wrap items-center gap-3 px-4 py-3 sm:px-6">
           <div className="flex items-center gap-2.5">
             <span className="grid size-8 place-items-center rounded-[var(--radius-xs)] bg-[var(--color-accent)] text-[var(--color-accent-fg)]">
@@ -105,7 +105,7 @@ export function AppShell() {
         </div>
       </header>
       {!visible && (
-        <div className="flex flex-1 flex-col items-center justify-center gap-3 p-10 text-sm text-[var(--color-muted)]">
+        <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 overflow-y-auto p-10 text-sm text-[var(--color-muted)]">
           <p className="font-display text-2xl text-[var(--color-fg)]">어나더레드 데이터를 열고 있습니다</p>
           <p>PBS 폴더는 배포본에 없습니다. Data/species.dat · moves.dat를 읽습니다.</p>
           {loadError && <p className="text-[var(--color-danger)]">{loadError}</p>}

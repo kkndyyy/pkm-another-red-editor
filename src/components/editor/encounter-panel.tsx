@@ -79,8 +79,8 @@ export function EncounterPanel() {
   }
 
   return (
-    <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[280px_minmax(0,1fr)]">
-      <aside className="flex max-h-64 min-h-0 flex-col overflow-hidden border-b border-[var(--color-border)] lg:max-h-none lg:border-r lg:border-b-0">
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden lg:grid lg:grid-cols-[280px_minmax(0,1fr)]">
+      <aside className="flex max-h-64 min-h-0 shrink-0 flex-col overflow-hidden border-b border-[var(--color-border)] lg:h-full lg:max-h-none lg:border-r lg:border-b-0">
         <div className="flex items-center justify-between gap-2 p-3 text-xs text-[var(--color-muted)]">
           <span>
             {list.length} / {encounters.length}
@@ -90,7 +90,7 @@ export function EncounterPanel() {
             장소
           </Button>
         </div>
-        <div className="min-h-0 flex-1 overflow-y-auto">
+        <div className="list-scroll">
           {list.map((a) => {
             const active = current?.key === a.key;
             const n = Object.values(a.slots).reduce((sum, r) => sum + r.length, 0);

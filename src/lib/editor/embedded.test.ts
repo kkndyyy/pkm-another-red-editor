@@ -79,7 +79,35 @@ describe("portable zip", () => {
     assert.match(text, /index\.html/);
     assert.match(text, /redforge\.js/);
     assert.match(text, /start\.bat/);
+    assert.match(text, /update\.bat/);
+    assert.match(text, /update\.ps1/);
     assert.match(text, /README\.txt/);
+    assert.match(text, /kkndyyy\/pkm-another-red-editor/);
     assert.ok(zip.length > 500_000, "zip should include editor + data");
+  });
+});
+
+describe("portable updater", () => {
+  it("points at the git repo and lists editor files", () => {
+    const ps1 = readFileSync(new URL("../../../scripts/portable-update.ps1", import.meta.url), "utf8");
+    const bat = readFileSync(new URL("../../../scripts/portable-update.bat", import.meta.url), "utf8");
+    assert.match(ps1, /kkndyyy\/pkm-another-red-editor/);
+    assert.match(ps1, /codeload\.github\.com/);
+    assert.match(ps1, /git clone --depth 1/);
+    assert.match(ps1, /redforge\.js/);
+    assert.match(ps1, /dist-portable/);
+    assert.match(bat, /update\.ps1/);
+  });
+
+  it("GitHub main has dist-portable editor files", async () => {
+    const res = await fetch("https://api.github.com/repos/kkndyyy/pkm-another-red-editor/contents/dist-portable", {
+      headers: { "User-Agent": "Redforge-Updater" },
+    });
+    assert.equal(res.ok, true, `github contents ${res.status}`);
+    const files = (await res.json()) as { name: string }[];
+    const names = files.map((f) => f.name);
+    assert.ok(names.includes("redforge.js"));
+    assert.ok(names.includes("index.html"));
+    assert.ok(names.includes("start.bat"));
   });
 });

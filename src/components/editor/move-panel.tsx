@@ -40,13 +40,13 @@ export function MovePanel() {
     : [];
 
   return (
-    <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[280px_minmax(0,1fr)]">
-      <aside className="flex max-h-64 min-h-0 flex-col overflow-hidden border-b border-[var(--color-border)] lg:max-h-none lg:border-r lg:border-b-0">
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden lg:grid lg:grid-cols-[280px_minmax(0,1fr)]">
+      <aside className="flex max-h-64 min-h-0 shrink-0 flex-col overflow-hidden border-b border-[var(--color-border)] lg:h-full lg:max-h-none lg:border-r lg:border-b-0">
         <div className="p-3 text-xs text-[var(--color-muted)]">
           {list.length} / {moves.length}
         </div>
         <TypeFilter value={typeFilter} onChange={setTypeFilter} />
-        <div className="min-h-0 flex-1 overflow-y-auto">
+        <div className="list-scroll">
           {list.map((m) => {
             const active = current?.internalName === m.internalName;
             return (

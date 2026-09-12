@@ -97,6 +97,8 @@ describe("portable updater", () => {
     assert.match(ps1, /redforge\.js/);
     assert.match(ps1, /dist-portable/);
     assert.match(bat, /update\.ps1/);
+    assert.match(bat, /<#PS#>/);
+    assert.match(bat, /redforge\.js/);
   });
 
   it("GitHub main has dist-portable editor files", async () => {

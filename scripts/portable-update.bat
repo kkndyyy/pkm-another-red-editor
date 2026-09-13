@@ -1,20 +1,19 @@
 @echo off
-chcp 65001 >nul
-cd /d "%~dp0"
+setlocal
+cd /d "%~dp0."
 title Redforge Update
 echo.
-echo GitHub latest files...
+echo Fetching latest editor from GitHub...
 echo.
 if not exist "%~dp0redforge.js" (
-  echo Run this next to redforge.js / start.bat
-  echo redforge.js 가 있는 폴더에서 실행하세요.
+  echo Run this in the unzipped editor folder.
+  echo redforge.js and start.bat must be in the same folder.
   echo.
   pause
   exit /b 1
 )
 powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0update.ps1"
-set ERR=%ERRORLEVEL%
-if not "%ERR%"=="0" (
+if errorlevel 1 (
   echo.
   echo UPDATE FAILED
   pause

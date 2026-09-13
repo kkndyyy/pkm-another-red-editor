@@ -97,15 +97,27 @@ const INDEX_HTML = `<!DOCTYPE html>
 </html>
 `;
 
+function toCrlf(input) {
+  const text = Buffer.isBuffer(input) ? input.toString("utf8") : String(input);
+  return text.replace(/^\uFEFF/, "").replace(/\r\n/g, "\n").replace(/\n/g, "\r\n");
+}
+
+function crlfBytes(input) {
+  return Buffer.from(toCrlf(input), "utf8");
+}
+
+function crlfBomBytes(input) {
+  return Buffer.concat([Buffer.from([0xef, 0xbb, 0xbf]), crlfBytes(input)]);
+}
+
 const START_BAT = `@echo off
-cd /d "%~dp0"
+cd /d "%~dp0."
 start "" "%~dp0index.html"
 `;
 
 const SERVER_BAT = `@echo off
-chcp 65001 >nul
-cd /d "%~dp0"
-echo 레드포지를 로컬 주소로 엽니다. 이 창을 닫지 마세요.
+cd /d "%~dp0."
+echo Redforge local server. Keep this window open.
 powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0start-server.ps1"
 pause
 `;
@@ -212,16 +224,14 @@ if (!existsSync(jsPath)) {
 }
 
 writeFileSync(resolve(outDir, "index.html"), INDEX_HTML);
-writeFileSync(resolve(outDir, "start.bat"), START_BAT);
-writeFileSync(resolve(outDir, "start-server.bat"), SERVER_BAT);
-writeFileSync(resolve(outDir, "start-server.ps1"), SERVER_PS1);
-writeFileSync(resolve(outDir, "README.txt"), README);
+writeFileSync(resolve(outDir, "start.bat"), crlfBytes(START_BAT));
+writeFileSync(resolve(outDir, "start-server.bat"), crlfBytes(SERVER_BAT));
+writeFileSync(resolve(outDir, "start-server.ps1"), crlfBomBytes(SERVER_PS1));
+writeFileSync(resolve(outDir, "README.txt"), crlfBomBytes(README.replace(/^\uFEFF/, "")));
 copyFileSync(resolve(root, "public/favicon.svg"), resolve(outDir, "favicon.svg"));
 
-const updateBat = readFileSync(resolve(root, "scripts/portable-update.bat"));
-const updatePs1Raw = readFileSync(resolve(root, "scripts/portable-update.ps1"));
-const bom = Buffer.from([0xef, 0xbb, 0xbf]);
-const updatePs1 = updatePs1Raw[0] === 0xef ? updatePs1Raw : Buffer.concat([bom, updatePs1Raw]);
+const updateBat = crlfBytes(readFileSync(resolve(root, "scripts/portable-update.bat")));
+const updatePs1 = crlfBomBytes(readFileSync(resolve(root, "scripts/portable-update.ps1")));
 writeFileSync(resolve(outDir, "update.bat"), updateBat);
 writeFileSync(resolve(outDir, "update.ps1"), updatePs1);
 
@@ -231,19 +241,19 @@ try {
 } catch {
   /* git 없음 */
 }
-writeFileSync(resolve(outDir, "version.txt"), `${sha}\n`);
+writeFileSync(resolve(outDir, "version.txt"), `${sha}\r\n`);
 
 const cssPath = resolve(outDir, "redforge.css");
 const files = [
   { name: "index.html", data: INDEX_HTML },
   { name: "redforge.js", data: new Uint8Array(readFileSync(jsPath)) },
-  { name: "start.bat", data: START_BAT },
-  { name: "start-server.bat", data: SERVER_BAT },
-  { name: "start-server.ps1", data: SERVER_PS1 },
+  { name: "start.bat", data: crlfBytes(START_BAT) },
+  { name: "start-server.bat", data: crlfBytes(SERVER_BAT) },
+  { name: "start-server.ps1", data: crlfBomBytes(SERVER_PS1) },
   { name: "update.bat", data: new Uint8Array(updateBat) },
   { name: "update.ps1", data: new Uint8Array(updatePs1) },
-  { name: "version.txt", data: `${sha}\n` },
-  { name: "README.txt", data: README },
+  { name: "version.txt", data: `${sha}\r\n` },
+  { name: "README.txt", data: crlfBomBytes(README.replace(/^\uFEFF/, "")) },
   { name: "favicon.svg", data: new Uint8Array(readFileSync(resolve(root, "public/favicon.svg"))) },
 ];
 if (existsSync(cssPath)) {

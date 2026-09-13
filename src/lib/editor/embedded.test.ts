@@ -98,6 +98,8 @@ describe("portable updater", () => {
     assert.doesNotMatch(ps1, /git clone/);
     assert.match(bat, /update\.ps1/);
     assert.match(bat, /redforge\.js/);
+    assert.match(bat, /cd \/d "%~dp0\."/);
+    assert.doesNotMatch(bat, /[가-힣]/);
   });
 
   it("GitHub main has dist-portable editor files", async () => {

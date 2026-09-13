@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 $root = (Resolve-Path $PSScriptRoot).Path.TrimEnd("\") + "\"
 $port = 8765
 $listener = $null

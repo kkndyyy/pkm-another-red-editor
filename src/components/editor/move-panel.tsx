@@ -1,6 +1,6 @@
-import { CATEGORY_KO, FLAG_HELP, FUNCTION_CODES, TYPE_KO, typeQueryHit } from "@/lib/editor/constants";
+import { CATEGORY_KO, FLAG_HELP, FUNCTION_CODES, TARGET_GROUPS, TARGET_KO, TYPE_KO, typeQueryHit } from "@/lib/editor/constants";
 import { useEditor, useIssues } from "@/lib/editor/store";
-import { CATEGORIES, TYPES } from "@/lib/editor/types";
+import { CATEGORIES, MOVE_TARGETS, TYPES } from "@/lib/editor/types";
 import { issuesFor } from "@/lib/editor/validate";
 import { Field, NativeSelect } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
@@ -65,6 +65,7 @@ export function MovePanel() {
                   <span className="block truncate text-sm font-medium">{m.name}</span>
                   <span className="block font-mono text-[11px] text-[var(--color-subtle)]">
                     {CATEGORY_KO[m.category]} · {m.power || "—"} / {m.accuracy || "필중"}
+                    {m.target && m.target !== "NearOther" ? ` · ${TARGET_KO[m.target] || m.target}` : ""}
                   </span>
                 </span>
               </button>
@@ -208,6 +209,29 @@ export function MovePanel() {
                   value={current.effectChance}
                   onChange={(e) => patchMove(current.internalName, { effectChance: Number(e.target.value) || 0 })}
                 />
+              </Field>
+              <Field label="대상 · 더블배틀" className="sm:col-span-2">
+                <NativeSelect
+                  value={current.target || "NearOther"}
+                  onChange={(e) => patchMove(current.internalName, { target: e.target.value })}
+                >
+                  {TARGET_GROUPS.map((g) => (
+                    <optgroup key={g.label} label={g.label}>
+                      {g.ids.map((id) => (
+                        <option key={id} value={id}>
+                          {TARGET_KO[id]}
+                        </option>
+                      ))}
+                    </optgroup>
+                  ))}
+                  {current.target && !(MOVE_TARGETS as readonly string[]).includes(current.target) && (
+                    <option value={current.target}>원본: {current.target}</option>
+                  )}
+                </NativeSelect>
+                <span className="text-xs text-[var(--color-subtle)]">
+                  더블배틀에서 몇 마리를 맞힐지 정합니다. 지진·파도타기는 「주변 전원」, 스톤샤워·열풍은 「앞의 상대
+                  전원」입니다.
+                </span>
               </Field>
               <Field label={`플래그  ${FLAG_HELP}`} className="sm:col-span-2">
                 <Input

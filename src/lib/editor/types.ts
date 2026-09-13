@@ -21,6 +21,27 @@ export const TYPES = [
 
 export type ElementType = (typeof TYPES)[number];
 
+export const MOVE_TARGETS = [
+  "NearOther",
+  "NearFoe",
+  "RandomNearFoe",
+  "Other",
+  "AllNearFoes",
+  "AllNearOthers",
+  "AllFoes",
+  "AllBattlers",
+  "User",
+  "UserOrNearAlly",
+  "NearAlly",
+  "UserAndAllies",
+  "UserSide",
+  "FoeSide",
+  "BothSides",
+  "None",
+] as const;
+
+export type MoveTarget = (typeof MOVE_TARGETS)[number];
+
 export const CATEGORIES = ["Physical", "Special", "Status"] as const;
 export type MoveCategory = (typeof CATEGORIES)[number];
 

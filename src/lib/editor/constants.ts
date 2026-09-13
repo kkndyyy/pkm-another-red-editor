@@ -151,6 +151,32 @@ export const FUNCTION_CODES: { code: string; label: string }[] = [
 export const FLAG_HELP =
   "a=접촉  b=방어영향  e=스니치  f=거울  k=킹실드  n=가드교체";
 
+export const TARGET_KO: Record<string, string> = {
+  NearOther: "앞의 포켓몬 하나",
+  NearFoe: "앞의 상대 하나",
+  RandomNearFoe: "앞의 상대 랜덤",
+  Other: "다른 포켓몬 하나",
+  AllNearFoes: "앞의 상대 전원 (더블)",
+  AllNearOthers: "주변 전원 · 아군 포함 (지진)",
+  AllFoes: "상대 전원",
+  AllBattlers: "배틀 전원",
+  User: "자신",
+  UserOrNearAlly: "자신 또는 옆 아군",
+  NearAlly: "옆 아군",
+  UserAndAllies: "자신과 아군 전원",
+  UserSide: "아군 필드",
+  FoeSide: "상대 필드",
+  BothSides: "양쪽 필드",
+  None: "대상 없음",
+};
+
+export const TARGET_GROUPS: { label: string; ids: string[] }[] = [
+  { label: "한 마리", ids: ["NearOther", "NearFoe", "RandomNearFoe", "Other"] },
+  { label: "더블 · 여러 마리", ids: ["AllNearFoes", "AllNearOthers", "AllFoes", "AllBattlers"] },
+  { label: "자신 · 아군", ids: ["User", "UserOrNearAlly", "NearAlly", "UserAndAllies"] },
+  { label: "필드", ids: ["UserSide", "FoeSide", "BothSides", "None"] },
+];
+
 export const ENCOUNTER_TYPE_KO: Record<string, string> = {
   Land: "풀숲",
   LandDay: "풀숲(낮)",

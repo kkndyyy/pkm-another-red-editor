@@ -82,7 +82,6 @@ describe("portable zip", () => {
     assert.match(text, /update\.bat/);
     assert.match(text, /update\.ps1/);
     assert.match(text, /README\.txt/);
-    assert.match(text, /kkndyyy\/pkm-another-red-editor/);
     assert.ok(zip.length > 500_000, "zip should include editor + data");
   });
 });
@@ -92,12 +91,12 @@ describe("portable updater", () => {
     const ps1 = readFileSync(new URL("../../../scripts/portable-update.ps1", import.meta.url), "utf8");
     const bat = readFileSync(new URL("../../../scripts/portable-update.bat", import.meta.url), "utf8");
     assert.match(ps1, /kkndyyy\/pkm-another-red-editor/);
-    assert.match(ps1, /codeload\.github\.com/);
-    assert.match(ps1, /git clone --depth 1/);
-    assert.match(ps1, /redforge\.js/);
+    assert.match(ps1, /raw\.githubusercontent\.com/);
     assert.match(ps1, /dist-portable/);
+    assert.match(ps1, /redforge\.js/);
+    assert.doesNotMatch(ps1, /Expand-Archive/);
+    assert.doesNotMatch(ps1, /git clone/);
     assert.match(bat, /update\.ps1/);
-    assert.match(bat, /<#PS#>/);
     assert.match(bat, /redforge\.js/);
   });
 
@@ -111,5 +110,17 @@ describe("portable updater", () => {
     assert.ok(names.includes("redforge.js"));
     assert.ok(names.includes("index.html"));
     assert.ok(names.includes("start.bat"));
+  });
+});
+
+describe("move targets", () => {
+  it("has double-battle spread options", async () => {
+    const { MOVE_TARGETS } = await import("./types.ts");
+    const { TARGET_KO, TARGET_GROUPS } = await import("./constants.ts");
+    assert.ok(MOVE_TARGETS.includes("AllNearFoes"));
+    assert.ok(MOVE_TARGETS.includes("AllNearOthers"));
+    assert.equal(TARGET_KO.AllNearFoes.includes("더블"), true);
+    const ids = TARGET_GROUPS.flatMap((g) => g.ids);
+    for (const t of MOVE_TARGETS) assert.ok(ids.includes(t), t);
   });
 });
